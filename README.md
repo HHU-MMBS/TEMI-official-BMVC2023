@@ -1,15 +1,14 @@
 # Official code for paper Exploring the Limits of Deep Image Clustering using Pretrained Models
 This is the official code to reproduce our results as published in [BMVC2023](https://bmvc2023.org/)
 
-[Arxiv](https://arxiv.org/abs/2303.17896), [Youtube](https://www.youtube.com/watch?v=Z-1HpVcjzYM), [BMVC2023-page]()
-
+[![arXiv](https://img.shields.io/badge/YouTube-red)](https://www.youtube.com/watch?v=Z-1HpVcjzYM) [![arXiv](https://img.shields.io/badge/BMVC-2023-blue)](https://bmvc2023.org/) [![arXiv](https://img.shields.io/badge/arXiv-2303.17896-red)]([https://arxiv.org/abs/2206.00481](https://arxiv.org/abs/2303.17896))
 
 ## Set up instructions
 
 #### Install virtual env with clip via:
 ```
-conda create -n ssl python=3.7
-conda activate ssl
+conda create -n temi python=3.7
+conda activate temi
 
 pip install -r requirements.txt
 ```
@@ -57,6 +56,24 @@ python eval_experiment.py --ckpt_folder $outdir
 ```
 
 
+
+
+
+## How to cite our work
+```bibtex
+@inproceedings{adaloglou@exploring,
+  title     = {Exploring the Limits of Deep Image Clustering using Pretrained Models},
+  author    = {Adaloglou, Nikolas and Michels, Felix and Kalisch, Hamza and Kollmann, Markus},
+  booktitle = {British Machine Vision Conference (BMVC)},
+  year      = {2023}
+}
+```
+
+## Licence and credits
+The codebase was developed based on FAIR's [DINO repository](https://github.com/facebookresearch/dino), which has an Apache License 2.0.
+For the clustering evaluations, we used the function from [SSCN](https://github.com/elad-amrani/self-classifier)
+
+
 ### Linear Probing
 ```
 python linear_evaluation.py --arch=clip_ViT-B/32 --dataset CIFAR10
@@ -68,7 +85,3 @@ Note: Multiple architectures can be passed in `--archs`
 python baseline_kmeans.py --dataset CIFAR10 --archs clip_ViT-B/32
 ```
 
-
-## Licence and credits
-The codebase was developed based on FAIR's [DINO repository](https://github.com/facebookresearch/dino), which has an Apache License 2.0.
-For the clustering evaluations we used the function from [SSCN](https://github.com/elad-amrani/self-classifier)
