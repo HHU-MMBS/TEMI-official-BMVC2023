@@ -1,7 +1,7 @@
 # Official code for paper Exploring the Limits of Deep Image Clustering using Pretrained Models
 This is the official code to reproduce our results as published in [BMVC2023](https://bmvc2023.org/)
 
-[![arXiv](https://img.shields.io/badge/YouTube-red)](https://www.youtube.com/watch?v=Z-1HpVcjzYM) [![arXiv](https://img.shields.io/badge/BMVC-2023-blue)](https://bmvc2023.org/) [![arXiv](https://img.shields.io/badge/arXiv-2303.17896-red)]([https://arxiv.org/abs/2206.00481](https://arxiv.org/abs/2303.17896))
+[![arXiv](https://img.shields.io/badge/YouTube-red)](https://www.youtube.com/watch?v=Z-1HpVcjzYM) [![arXiv](https://img.shields.io/badge/BMVC-2023-blue)](https://bmvc2023.org/) [![arXiv](https://img.shields.io/badge/arXiv-2303.17896-red)](https://arxiv.org/abs/2303.17896)
 
 ## Set up instructions
 
