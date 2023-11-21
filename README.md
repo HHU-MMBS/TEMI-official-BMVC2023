@@ -1,7 +1,7 @@
 # Official code for paper Exploring the Limits of Deep Image Clustering using Pretrained Models
 This is the official code to reproduce our results as published in [BMVC2023](https://bmvc2023.org/)
 
-[![arXiv](https://img.shields.io/badge/YouTube-red)](https://www.youtube.com/watch?v=Z-1HpVcjzYM) [![arXiv](https://img.shields.io/badge/BMVC-2023-blue)](https://bmvc2023.org/) [![arXiv](https://img.shields.io/badge/arXiv-2303.17896-red)](https://arxiv.org/abs/2303.17896)
+[![arXiv](https://img.shields.io/badge/YouTube-red)](https://www.youtube.com/watch?v=Z-1HpVcjzYM) [![arXiv](https://img.shields.io/badge/BMVC-2023-blue)](https://proceedings.bmvc2023.org/297/) [![arXiv](https://img.shields.io/badge/arXiv-2303.17896-red)](https://arxiv.org/abs/2303.17896)
 
 ## Set up instructions
 
@@ -13,7 +13,7 @@ conda activate temi
 pip install -r requirements.txt
 ```
 
-#### Available models names
+#### Available model names
 ```
 dino_resnet50, dino_vits16, dino_vitb16, timm_resnet50,timm_vit_small_patch16_224, timm_vit_base_patch16_224 timm_vit_large_patch16_224, convnext_small, convnext_base, convnext_large, msn_vit_small, msn_vit_base msn_vit_large, mocov3_vit_small, mocov3_vit_base, clip_ViT-B/16, clip_ViT-L/14, clip_RN50, mae_vit_base, mae_vit_large, mae_vit_huge
 ```
@@ -61,11 +61,13 @@ python eval_experiment.py --ckpt_folder $outdir
 
 ## How to cite our work
 ```bibtex
-@inproceedings{adaloglou@exploring,
-  title     = {Exploring the Limits of Deep Image Clustering using Pretrained Models},
-  author    = {Adaloglou, Nikolas and Michels, Felix and Kalisch, Hamza and Kollmann, Markus},
-  booktitle = {British Machine Vision Conference (BMVC)},
-  year      = {2023}
+@inproceedings{Adaloglou_2023_BMVC,
+author    = {Nikolas Adaloglou and Felix Michels and Hamza Kalisch and Markus Kollmann},
+title     = {Exploring the Limits of Deep Image Clustering using Pretrained Models},
+booktitle = {34th British Machine Vision Conference 2023, {BMVC} 2023, Aberdeen, UK, November 20-24, 2023},
+publisher = {BMVA},
+year      = {2023},
+url       = {https://papers.bmvc2023.org/0297.pdf}
 }
 ```
 
